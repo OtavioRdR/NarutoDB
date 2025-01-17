@@ -1,20 +1,18 @@
 package com.otavio.narutodb.model;
 
-public class NinjaDeGenjutsu extends Personagem implements Ninja{
+public class NinjaDeGenjutsu extends Personagem implements Ninja {
 
-    public NinjaDeGenjutsu(String nome, int idade, String aldeia, int chakra) {
-        super(nome, idade, aldeia, chakra);
+    public NinjaDeGenjutsu(String nome, int idade, String aldeia, int chakra, int vida) {
+        super(nome, idade, aldeia, chakra, vida);
     }
 
     @Override
-    public void ultilizarJutsu() {
-        System.out.println(getNome() + " Ultilizando golpe de Genjustsu!!!!!");
-
+    public void usarJutsu(String nomeJutsu, Personagem inimigo) {
+        super.usarJutsu(nomeJutsu, inimigo);
     }
 
     @Override
-    public void desviar() {
-        System.out.println(getNome() + " Desviando de Ataque no estilo GenJutsu");
-
+    public void esquivar(int hit) {
+        super.esquivar(hit);
     }
 }
