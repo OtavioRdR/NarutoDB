@@ -11,6 +11,7 @@ public class NarutoController {
 
     @GetMapping("/ninja")
     public String interagirComNinjas() {
+
         NinjaDeGenjutsu itachi = new NinjaDeGenjutsu("Itachi Uchiha", 17, "Konoha", 100, 100);
         NinjaDeTaijutsu rockLee = new NinjaDeTaijutsu("Rock Lee", 13, "Konoha", 90, 100);
         NinjaDeNinjutsu sakura = new NinjaDeNinjutsu("Sakura Haruno", 12, "Konoha", 100, 100);
