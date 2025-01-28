@@ -9,5 +9,4 @@ public class NarutodbApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NarutodbApplication.class, args);
 	}
-
 }

@@ -1,19 +1,25 @@
 package com.otavio.narutodb.model;
 
 public class Jutsu {
-    private int hit; //<<<<<<<troquei dano por hit so pra diferenciar
-    private int consumoChakra;
+    private String nome;
+    private int dano;
+    private int consumoDeChakra;
 
-    public Jutsu(int hit, int consumoChakra) {
-        this.hit = hit;
-        this.consumoChakra = consumoChakra;
+    public Jutsu(String nome, int dano, int consumoDeChakra) {
+        this.nome = nome;
+        this.dano = dano;
+        this.consumoDeChakra = consumoDeChakra;
     }
 
-    public int getHit() {
-        return hit;
+    public String getNome() {
+        return nome;
     }
 
-    public int getConsumirChakra() {
-        return consumoChakra;
+    public int getDano() {
+        return dano;
+    }
+
+    public int getConsumoDeChakra() {
+        return consumoDeChakra;
     }
 }
